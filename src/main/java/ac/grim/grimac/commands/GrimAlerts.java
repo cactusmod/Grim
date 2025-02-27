@@ -7,7 +7,7 @@ import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.Subcommand;
 import org.bukkit.entity.Player;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimAlerts extends BaseCommand {
     @Subcommand("alerts")
     @CommandPermission("grim.alerts")

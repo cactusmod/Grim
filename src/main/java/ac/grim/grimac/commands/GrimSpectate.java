@@ -13,7 +13,7 @@ import org.bukkit.GameMode;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimSpectate extends BaseCommand {
     @Subcommand("spectate")
     @CommandPermission("grim.spectate")

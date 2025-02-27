@@ -8,7 +8,7 @@ import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.Subcommand;
 import org.bukkit.command.CommandSender;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimReload extends BaseCommand {
     @Subcommand("reload")
     @CommandPermission("grim.reload")

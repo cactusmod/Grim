@@ -14,7 +14,7 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimStopSpectating extends BaseCommand {
     public static final CommandCompletionHandler<BukkitCommandCompletionContext> completionHandler = context -> context.getSender().hasPermission("grim.spectate.stophere") ? List.of("here") : List.of();
 

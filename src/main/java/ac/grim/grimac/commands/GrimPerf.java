@@ -8,7 +8,7 @@ import co.aikar.commands.annotation.Subcommand;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimPerf extends BaseCommand {
     @Subcommand("perf|performance")
     @CommandPermission("grim.performance")

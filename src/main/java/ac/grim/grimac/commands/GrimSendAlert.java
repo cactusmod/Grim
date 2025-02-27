@@ -10,7 +10,7 @@ import co.aikar.commands.annotation.Subcommand;
 import net.kyori.adventure.text.Component;
 import org.bukkit.entity.Player;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimSendAlert extends BaseCommand {
     @Subcommand("sendalert")
     @CommandPermission("grim.sendalert")

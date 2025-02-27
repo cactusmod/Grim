@@ -1,8 +1,7 @@
 package ac.grim.grimac.manager;
 
 import ac.grim.grimac.api.AbstractCheck;
-import ac.grim.grimac.checks.impl.aim.AimDuplicateLook;
-import ac.grim.grimac.checks.impl.aim.AimModulo360;
+import ac.grim.grimac.checks.impl.aim.*;
 import ac.grim.grimac.checks.impl.aim.processor.AimProcessor;
 import ac.grim.grimac.checks.impl.badpackets.*;
 import ac.grim.grimac.checks.impl.combat.MultiInteractA;
@@ -13,10 +12,7 @@ import ac.grim.grimac.checks.impl.exploit.ExploitA;
 import ac.grim.grimac.checks.impl.exploit.ExploitB;
 import ac.grim.grimac.checks.impl.exploit.ExploitC;
 import ac.grim.grimac.checks.impl.groundspoof.NoFallA;
-import ac.grim.grimac.checks.impl.misc.ClientBrand;
-import ac.grim.grimac.checks.impl.misc.FastBreak;
-import ac.grim.grimac.checks.impl.misc.GhostBlockMitigation;
-import ac.grim.grimac.checks.impl.misc.TransactionOrder;
+import ac.grim.grimac.checks.impl.misc.*;
 import ac.grim.grimac.checks.impl.movement.*;
 import ac.grim.grimac.checks.impl.multiactions.*;
 import ac.grim.grimac.checks.impl.post.Post;
@@ -79,6 +75,8 @@ public class CheckManager {
                 .put(TeamHandler.class, new TeamHandler(player))
                 .put(ClientBrand.class, new ClientBrand(player))
                 .put(NoFallA.class, new NoFallA(player))
+                .put(AutoClickerLimit.class, new AutoClickerLimit(player))
+                .put(AutoClickerAttackStatic.class, new AutoClickerAttackStatic(player))
                 .put(BadPacketsO.class, new BadPacketsO(player))
                 .put(BadPacketsA.class, new BadPacketsA(player))
                 .put(BadPacketsB.class, new BadPacketsB(player))
@@ -119,6 +117,11 @@ public class CheckManager {
                 .put(AimProcessor.class, new AimProcessor(player))
                 .put(AimModulo360.class, new AimModulo360(player))
                 .put(AimDuplicateLook.class, new AimDuplicateLook(player))
+                .put(AimConstant.class, new AimConstant(player))
+                .put(AimInvalidMode.class, new AimInvalidMode(player))
+                .put(AimInvalidSensitivity.class, new AimInvalidSensitivity(player))
+                .put(AimSensitivityDifference.class, new AimSensitivityDifference(player))
+                .put(AimStatic.class, new AimStatic(player))
 //                .put(Baritone.class, new Baritone(player))
                 .build();
         vehicleCheck = new ImmutableClassToInstanceMap.Builder<VehicleCheck>()
@@ -141,6 +144,7 @@ public class CheckManager {
                 .put(NoSlowC.class, new NoSlowC(player))
                 .put(NoSlowD.class, new NoSlowD(player))
                 .put(NoSlowE.class, new NoSlowE(player))
+                .put(BaritoneMovement.class, new BaritoneMovement(player))
                 .put(MultiInteractA.class, new MultiInteractA(player))
                 .put(MultiInteractB.class, new MultiInteractB(player))
                 .put(SetbackTeleportUtil.class, new SetbackTeleportUtil(player)) // Avoid teleporting to new position, update safe pos last

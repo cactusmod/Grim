@@ -14,7 +14,7 @@ import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.manager.server.ServerVersion;
 import org.bukkit.command.CommandSender;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimProfile extends BaseCommand {
     @Subcommand("profile")
     @CommandPermission("grim.profile")

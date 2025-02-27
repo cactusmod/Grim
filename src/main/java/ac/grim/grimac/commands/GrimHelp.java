@@ -9,7 +9,7 @@ import co.aikar.commands.annotation.Default;
 import co.aikar.commands.annotation.Subcommand;
 import org.bukkit.command.CommandSender;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimHelp extends BaseCommand {
     @Default
     @Subcommand("help")

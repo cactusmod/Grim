@@ -12,7 +12,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
-@CommandAlias("grim|grimac")
+@CommandAlias("scorpion|ac")
 public class GrimDebug extends BaseCommand {
     @Subcommand("debug")
     @CommandPermission("grim.debug")

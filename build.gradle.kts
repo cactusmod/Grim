@@ -84,10 +84,9 @@ dependencies {
 }
 
 bukkit {
-    name = "GrimAC"
+    name = "Scorpion"
     author = "GrimAC"
     main = "ac.grim.grimac.GrimAC"
-    website = "https://grim.ac/"
     apiVersion = "1.13"
     foliaSupported = true
 
