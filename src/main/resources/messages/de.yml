@@ -1,7 +1,7 @@
 # Sie können auch Hexadezimalcodes im Format #FFFFFF oder #ffffff verwenden.
 
 # \u00BB ist " (double >>), ANSI und UTF-8 interpretieren dies unterschiedlich... dadurch kann sogar ? angezeigt werden
-prefix: "&bGrim &8\u00BB"
+prefix: "<#ffa552>Scorpion &8\u00BB"
 
 alerts-enabled: "%prefix% &fAlerts aktiviert"
 alerts-disabled: "%prefix% &fAlerts deaktiviert"

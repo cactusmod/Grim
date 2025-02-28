@@ -45,7 +45,7 @@ public class MessageUtil {
     }
 
     public @NotNull Component miniMessage(@NotNull String string) {
-        string = string.replace("%prefix%", GrimAPI.INSTANCE.getConfigManager().getConfig().getStringElse("prefix", "&bGrim &8»"));
+        string = string.replace("%prefix%", GrimAPI.INSTANCE.getConfigManager().getConfig().getStringElse("prefix", "<#ffa552>Scorpion &8»"));
 
         // hex codes
         if (PacketEvents.getAPI().getServerManager().getVersion().isNewerThanOrEquals(ServerVersion.V_1_16)) {

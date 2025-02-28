@@ -38,7 +38,7 @@ public class BaseConfigManager {
         }
 
         printAlertsToConsole = config.getBooleanElse("alerts.print-to-console", true);
-        prefix = config.getStringElse("prefix", "&bGrim &8»");
+        prefix = config.getStringElse("prefix", "<#ffa552>Scorpion &8»");
     }
 
     // ran on start, can be used to handle things that can't be done while loading
@@ -48,7 +48,7 @@ public class BaseConfigManager {
 
     @Getter private boolean printAlertsToConsole = false;
 
-    @Getter private String prefix = "&bGrim &8»";
+    @Getter private String prefix = "<#ffa552>Scorpion &8»";
 
     private final List<Pattern> ignoredClientPatterns = new ArrayList<>();
 

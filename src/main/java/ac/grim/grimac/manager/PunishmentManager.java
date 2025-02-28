@@ -156,7 +156,7 @@ public class PunishmentManager implements ConfigReloadable {
                                         player.user.sendMessage(MessageUtil.miniMessage(cmd));
                                         continue;
                                     }
-                                    cmd = "grim sendalert " + cmd; // Not test mode, we can add the command prefix
+                                    cmd = "ac sendalert " + cmd; // Not test mode, we can add the command prefix
                                 }
 
                                 String finalCmd = cmd;

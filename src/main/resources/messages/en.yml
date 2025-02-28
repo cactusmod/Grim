@@ -1,7 +1,7 @@
 # You can use hex codes too, in the format #FFFFFF or #ffffff.
 
 # \u00BB is » (double >>), ANSI and UTF-8 interpret this differently... you may even see ? due to this
-prefix: "<#ffa552> Scorpion &8\u00BB"
+prefix: "<#ffa552>Scorpion &8\u00BB"
 
 alerts-enabled: "%prefix% &fAlerts <#00ff00>enabled"
 alerts-disabled: "%prefix% &fAlerts <#ff0000>disabled"
