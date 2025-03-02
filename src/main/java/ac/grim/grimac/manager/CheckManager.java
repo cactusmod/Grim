@@ -107,6 +107,7 @@ public class CheckManager {
                 .put(MultiActionsE.class, new MultiActionsE(player))
                 .put(TransactionOrder.class, new TransactionOrder(player))
                 .put(NoSlowB.class, new NoSlowB(player))
+                .put(FullStopA.class, new FullStopA(player))
                 .put(SetbackBlocker.class, new SetbackBlocker(player)) // Must be last class otherwise we can't check while blocking packets
                 .build();
         positionCheck = new ImmutableClassToInstanceMap.Builder<PositionCheck>()
